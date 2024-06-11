@@ -11,19 +11,35 @@
 <body>
     <div class="container">
         <div class="filters">
-            <input type="text" id="search-bar" placeholder="Search...">
+            <input type="text" id="search-bar" placeholder='Try Search : "Human" or "Fireball"'>
             <div class="sort-buttons">
-                <button id="sort-asc" class="sort-btn">Sort Ascending</button>
-                <button id="sort-desc" class="sort-btn">Sort Descending</button>
+                <button id="sort-asc" class="sort-btn">↝</button>
+                <hr>
+                <button id="sort-desc" class="sort-btn">↜</button>
             </div>
-            <!-- <div class="rarity-filters">
-                <button class="rarity-btn" data-rarity="common">Common</button>
-                <button class="rarity-btn" data-rarity="un-common">Un-Common</button>
-                <button class="rarity-btn" data-rarity="rare">Rare</button>
-                <button class="rarity-btn" data-rarity="epic">Epic</button>
-                <button class="rarity-btn" data-rarity="legendary">Legendary</button>
-                <button class="rarity-btn" data-rarity="mythical">Mythical</button>
-            </div> -->
+            <div class="rarity-filters">
+                <button class="rarity-btn" data-rarity="common"></button>
+                <hr>
+                <button class="rarity-btn" data-rarity="un-common"></button>
+                <hr>
+                <button class="rarity-btn" data-rarity="rare"></button>
+                <hr>
+                <button class="rarity-btn" data-rarity="all">ALL</button>
+                <hr>
+                <button class="rarity-btn" data-rarity="epic"></button>
+                <hr>
+                <button class="rarity-btn" data-rarity="legendary"></button>
+                <hr>
+                <button class="rarity-btn" data-rarity="mythical"></button>
+            </div>
+            The images will come one day ^^
+            <br>
+            When I find the courage!
+            <div id="search-choice">
+                <button id="sort-race" class="sort-btn">Races</button>
+                <hr>
+                <button id="sort-spells" class="sort-btn">Spells</button>
+            </div>
         </div>
         <div id="race-container"></div>
     </div>

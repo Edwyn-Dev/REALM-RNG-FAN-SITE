@@ -8,10 +8,15 @@
 }
 
 body {
-  background-color: #f7f7f7;
+  background: rgb(44, 44, 44,0.80);
   color: #333;
   margin: 0;
   padding: 20px;
+}
+
+#search-choice {
+  display: flex;
+  gap: 5px;
 }
 
 .container {
@@ -36,6 +41,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 #search-bar {
@@ -50,6 +56,7 @@ h1 {
 
 .sort-buttons {
   margin-bottom: 10px;
+  display: flex;
 }
 
 .sort-btn {
@@ -82,35 +89,44 @@ h1 {
   border: none;
   cursor: pointer;
   transition: transform 0.3s, box-shadow 0.3s;
-  color: white;
+  color: rgb(255, 255, 255);
   font-weight: bold;
 }
 
-.rarity-btn[data-rarity="common"] {
-  background-color: white;
-  color: #333;
+.rarity-btn[data-rarity="common"],
+.race-content[data-rarity="common"] {
+  background-color: rgb(168, 168, 168);
 }
 
-.rarity-btn[data-rarity="un-common"] {
-  background-color: green;
+.rarity-btn[data-rarity="un-common"],
+.race-content[data-rarity="un-common"] {
+  background-color: rgb(17, 148, 17);
 }
 
-.rarity-btn[data-rarity="rare"] {
-  background-color: blue;
+.rarity-btn[data-rarity="rare"],
+.race-content[data-rarity="rare"] {
+  background-color: rgb(64, 123, 199);
 }
 
-.rarity-btn[data-rarity="epic"] {
-  background-color: purple;
+.rarity-btn[data-rarity="epic"],
+.race-content[data-rarity="epic"] {
+  background-color: rgba(158, 0, 158, 0.692);
 }
 
-.rarity-btn[data-rarity="legendary"] {
-  background-color: yellow;
-  color: #333;
+.rarity-btn[data-rarity="legendary"],
+.race-content[data-rarity="legendary"] {
+  background-color: rgb(170, 107, 12);
 }
 
-.rarity-btn[data-rarity="mythical"] {
-  background-color: red;
+.rarity-btn[data-rarity="mythical"],
+.race-content[data-rarity="mythical"] {
+  background-color: rgb(201, 35, 35);
 }
+
+.rarity-btn[data-rarity="all"] {
+  background-color: rgb(44, 44, 44,0.80);
+}
+
 
 .rarity-btn:hover {
   transform: translateY(-2px);
@@ -125,7 +141,8 @@ h1 {
 }
 
 .race-card {
-  flex: 1 1 calc(33.333% - 20px);
+  text-align: center;
+  flex: 0 1 calc(25% - 20px);
   background-color: #ffffff;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -142,7 +159,6 @@ h1 {
 .race-image {
   width: 100%;
   height: 0;
-  padding-bottom: 141.42%; /* Aspect ratio for A4 (1:1.4142) */
   background-color: #e2e2e2;
   background-size: cover;
   background-position: center;
@@ -158,7 +174,7 @@ h1 {
   font-size: 1.4em;
   color: #333;
   margin-bottom: 10px;
-  text-transform: capitalize;
+  text-transform: capitalize;font-weight: bold;
 }
 
 .race-description {
@@ -174,16 +190,17 @@ h1 {
   color: #333;
   border-top: 1px solid #ddd;
   padding-top: 10px;
+  gap: 5px;
 }
 
 .race-stat {
   flex: 1;
   text-align: center;
   padding: 5px;
-}
-
-.race-stat + .race-stat {
-  border-left: 1px solid #ddd;
+  background-color: #333;
+  border-radius: 10px;
+  color: #fff;
+  
 }
 
 .stat-label {
@@ -191,14 +208,14 @@ h1 {
   display: block;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .race-card {
-      flex: 1 1 calc(50% - 20px);
+    flex: 0 1 calc(50% - 20px);
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 630px) {
   .race-card {
-      flex: 1 1 calc(100% - 20px);
+    flex: 0 1 calc(100% - 20px);
   }
 }

@@ -1,0 +1,156 @@
+[
+    {
+        "name": "Fireball",
+        "type": "normal",
+        "probability": 1,
+        "damage": 30,
+        "rarity": "common"
+    },
+    {
+        "name": "Ice Shard",
+        "type": "normal",
+        "probability": 3,
+        "damage": 30,
+        "rarity": "common"
+    },
+    {
+        "name": "Earth Throw",
+        "type": "normal",
+        "probability": 9,
+        "damage": 31,
+        "rarity": "common"
+    },
+    {
+        "name": "Magic Bow",
+        "type": "normal",
+        "probability": 25,
+        "damage": 33,
+        "rarity": "common"
+    },
+    {
+        "name": "Azure Flames",
+        "type": "normal",
+        "probability": 54,
+        "damage": 35,
+        "rarity": "common"
+    },
+    {
+        "name": "Gravity Abuse",
+        "type": "normal",
+        "probability": 510,
+        "damage": 81,
+        "rarity": "common"
+    },
+    {
+        "name": "Self Destruction",
+        "type": "normal",
+        "probability": 1430,
+        "damage": 173,
+        "rarity": "common"
+    },
+    {
+        "name": "Lightning Throw",
+        "type": "normal",
+        "probability": 3090,
+        "damage": 339,
+        "rarity": "un-common"
+    },
+    {
+        "name": "Sea Tentacles",
+        "type": "normal",
+        "probability": 5940,
+        "damage": 624,
+        "rarity": "rare"
+    },
+    {
+        "name": "Justic",
+        "type": "normal",
+        "probability": 10610,
+        "damage": 1090,
+        "rarity": "epic"
+    },
+    {
+        "name": "Lighting Beam",
+        "type": "normal",
+        "probability": 18050,
+        "damage": 1830,
+        "rarity": "legendary"
+    },
+    {
+        "name": "Ghastly Hook",
+        "type": "normal",
+        "probability": 29630,
+        "damage": 748,
+        "rarity": "legendary"
+    },
+    {
+        "name": "Scorching Strike",
+        "type": "normal",
+        "probability": 47360,
+        "damage": 477,
+        "rarity": "legendary"
+    },
+    {
+        "name": "Void Cage",
+        "type": "normal",
+        "probability": 74160,
+        "damage": 745,
+        "rarity": "legendary"
+    },
+    {
+        "name": "???",
+        "type": "normal",
+        "probability": "???",
+        "damage": "???",
+        "rarity": "mythical"
+    },
+    {
+        "name": "???",
+        "type": "normal",
+        "probability": "???",
+        "damage": "???",
+        "rarity": "mythical"
+    },
+    {
+        "name": "???",
+        "type": "normal",
+        "probability": "???",
+        "damage": "???",
+        "rarity": "mythical"
+    },
+    {
+        "name": "Crimson Chains",
+        "type": "normal",
+        "probability": 391540,
+        "damage": 3920,
+        "rarity": "mythical"
+    },
+    {
+        "name": "???",
+        "type": "normal",
+        "probability": "???",
+        "damage": "???",
+        "rarity": "mythical"
+    },
+    {
+        "name": "???",
+        "type": "normal",
+        "probability": "???",
+        "damage": "???",
+        "rarity": "mythical"
+    },
+    {
+        "name": "???",
+        "type": "normal",
+        "probability": "???",
+        "damage": "???",
+        "rarity": "mythical"
+    },
+    {
+        "name": "???",
+        "type": "normal",
+        "probability": "???",
+        "damage": "???",
+        "rarity": "mythical"
+    }
+]
