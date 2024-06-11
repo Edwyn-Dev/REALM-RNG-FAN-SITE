@@ -22,8 +22,8 @@ $(document).ready(function () {
             const description = $('<div class="race-description">Description for ' + details.name + ' (' + details.type + ')</div>');
             const stats = $('<div class="race-stats"></div>');
 
-            stats.append(`<div class="race-stat"><span class="stat-label">❤️ ${formatNumber(details.health)} HP</div></span>`);
-            stats.append(`<div class="race-stat"><span class="stat-label">🎲 1 in ${formatNumber(100+details.probability)}</div></span>`);
+            stats.append(`<div class="race-stat"><span class="stat-label">❤️ ${formatNumber(100+details.health)} HP</div></span>`);
+            stats.append(`<div class="race-stat"><span class="stat-label">🎲 1 in ${formatNumber(details.probability)}</div></span>`);
             stats.append(`<div class="race-stat"><span class="stat-label">${(details.rarity).toUpperCase()}</div></span>`);
 
             content.append(title, description, stats);
