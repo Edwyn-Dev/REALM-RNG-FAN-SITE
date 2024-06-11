@@ -1,0 +1,422 @@
+[
+  {
+    "name": "Human",
+    "type": "normal",
+    "probability": 1,
+    "health": 0,
+    "rarity": "common"
+  },
+  {
+    "name": "Human",
+    "type": "shiny",
+    "probability": 105,
+    "health": 2,
+    "rarity": "common"
+  },
+  {
+    "name": "Human",
+    "type": "golden",
+    "probability": 210,
+    "health": 4,
+    "rarity": "common"
+  },
+  {
+    "name": "Elf",
+    "type": "normal",
+    "probability": 2,
+    "health": 0,
+    "rarity": "common"
+  },
+  {
+    "name": "Elf",
+    "type": "shiny",
+    "probability": 110,
+    "health": 2,
+    "rarity": "common"
+  },
+  {
+    "name": "Elf",
+    "type": "golden",
+    "probability": 220,
+    "health": 4,
+    "rarity": "common"
+  },
+  {
+    "name": "Ent",
+    "type": "normal",
+    "probability": 5,
+    "health": 0,
+    "rarity": "common"
+  },
+  {
+    "name": "Ent",
+    "type": "shiny",
+    "probability": 125,
+    "health": 2,
+    "rarity": "common"
+  },
+  {
+    "name": "Ent",
+    "type": "golden",
+    "probability": 250,
+    "health": 4,
+    "rarity": "common"
+  },
+  {
+    "name": "Fairy",
+    "type": "normal",
+    "probability": 12,
+    "health": 1,
+    "rarity": "common"
+  },
+  {
+    "name": "Fairy",
+    "type": "shiny",
+    "probability": 160,
+    "health": 5,
+    "rarity": "common"
+  },
+  {
+    "name": "Fairy",
+    "type": "golden",
+    "probability": 320,
+    "health": 9,
+    "rarity": "common"
+  },
+  {
+    "name": "Dwarf",
+    "type": "normal",
+    "probability": 18,
+    "health": 1,
+    "rarity": "common"
+  },
+  {
+    "name": "Dwarf",
+    "type": "shiny",
+    "probability": 190,
+    "health": 7,
+    "rarity": "common"
+  },
+  {
+    "name": "Dwarf",
+    "type": "golden",
+    "probability": 380,
+    "health": 13,
+    "rarity": "common"
+  },
+  {
+    "name": "Feline",
+    "type": "normal",
+    "probability": 450,
+    "health": 34,
+    "rarity": "common"
+  },
+  {
+    "name": "Feline",
+    "type": "shiny",
+    "probability": 2350,
+    "health": 169,
+    "rarity": "un-common"
+  },
+  {
+    "name": "Feline",
+    "type": "golden",
+    "probability": 4700,
+    "health": 338,
+    "rarity": "un-common"
+  },
+  {
+    "name": "Schroom",
+    "type": "normal",
+    "probability": 1140,
+    "health": 85,
+    "rarity": "common"
+  },
+  {
+    "name": "Schroom",
+    "type": "shiny",
+    "probability": 5780,
+    "health": 426,
+    "rarity": "rare"
+  },
+  {
+    "name": "Schroom",
+    "type": "golden",
+    "probability": 11560,
+    "health": 852,
+    "rarity": "epic"
+  },
+  {
+    "name": "Centaur",
+    "type": "normal",
+    "probability": 2160,
+    "health": 162,
+    "rarity": "un-common"
+  },
+  {
+    "name": "Centaur",
+    "type": "shiny",
+    "probability": 10900,
+    "health": 810,
+    "rarity": "epic"
+  },
+  {
+    "name": "Centaur",
+    "type": "golden",
+    "probability": 21800,
+    "health": 1620,
+    "rarity": "legendary"
+  },
+  {
+    "name": "Ghoul",
+    "type": "normal",
+    "probability": 3620,
+    "health": 271,
+    "rarity": "uncommon"
+  },
+  {
+    "name": "Ghoul",
+    "type": "shiny",
+    "probability": 18190,
+    "health": 1360,
+    "rarity": "legendary"
+  },
+  {
+    "name": "Ghoul",
+    "type": "golden",
+    "probability": 36380,
+    "health": 2710,
+    "rarity": "legendary"
+  },
+  {
+    "name": "Vampire",
+    "type": "normal",
+    "probability": 5620,
+    "health": 421,
+    "rarity": "rare"
+  },
+  {
+    "name": "Vampire",
+    "type": "shiny",
+    "probability": 28190,
+    "health": 2110,
+    "rarity": "legendary"
+  },
+  {
+    "name": "Vampire",
+    "type": "golden",
+    "probability": 56380,
+    "health": 4210,
+    "rarity": "legendary"
+  },
+  {
+    "name": "Pyronian",
+    "type": "normal",
+    "probability": 8280,
+    "health": 621,
+    "rarity": "epic"
+  },
+  {
+    "name": "Pyronian",
+    "type": "shiny",
+    "probability": 41500,
+    "health": 3510,
+    "rarity": "legendary"
+  },
+  {
+    "name": "Pyronian",
+    "type": "golden",
+    "probability": 83000,
+    "health": 6210,
+    "rarity": "mythical"
+  },
+  {
+    "name": "Werewolf",
+    "type": "normal",
+    "probability": 11740,
+    "health": 880,
+    "rarity": "epic"
+  },
+  {
+    "name": "Werewolf",
+    "type": "shiny",
+    "probability": 58700,
+    "health": 4400,
+    "rarity": "legendary"
+  },
+  {
+    "name": "Werewolf",
+    "type": "golden",
+    "probability": 117560,
+    "health": 8800,
+    "rarity": "mythical"
+  },
+  {
+    "name": "Cerberus",
+    "type": "normal",
+    "probability": 16130,
+    "health": 1210,
+    "rarity": "legendary"
+  },
+  {
+    "name": "Cerberus",
+    "type": "shiny",
+    "probability": 80750,
+    "health": 6050,
+    "rarity": "mythical"
+  },
+  {
+    "name": "Cerberus",
+    "type": "golden",
+    "probability": 161500,
+    "health": 12100,
+    "rarity": "mythical"
+  },
+  {
+    "name": "Aquarian",
+    "type": "normal",
+    "probability": 21620,
+    "health": 1620,
+    "rarity": "legendary"
+  },
+  {
+    "name": "Aquarian",
+    "type": "shiny",
+    "probability": 108190,
+    "health": 8110,
+    "rarity": "mythical"
+  },
+  {
+    "name": "Aquarian",
+    "type": "golden",
+    "probability": 216380,
+    "health": 16210,
+    "rarity": "mythical"
+  },
+  {
+    "name": "Minotaur",
+    "type": "normal",
+    "probability": 28370,
+    "health": 2130,
+    "rarity": "legendary"
+  },
+  {
+    "name": "Minotaur",
+    "type": "shiny",
+    "probability": 141850,
+    "health": 10650,
+    "rarity": "mythical"
+  },
+  {
+    "name": "Minotaur",
+    "type": "golden",
+    "probability": 283700,
+    "health": 21300,
+    "rarity": "mythical"
+  },
+  {
+    "name": "Dark Elf",
+    "type": "normal",
+    "probability": 36560,
+    "health": 2740,
+    "rarity": "legendary"
+  },
+  {
+    "name": "Dark Elf",
+    "type": "shiny",
+    "probability": 182900,
+    "health": 13710,
+    "rarity": "mythical"
+  },
+  {
+    "name": "Dark Elf",
+    "type": "golden",
+    "probability": 365800,
+    "health": 27420,
+    "rarity": "mythical"
+  },
+  {
+    "name": "Dragonian",
+    "type": "normal",
+    "probability": 46390,
+    "health": 3480,
+    "rarity": "legendary"
+  },
+  {
+    "name": "Dragonian",
+    "type": "shiny",
+    "probability": 232030,
+    "health": 17390,
+    "rarity": "mythical"
+  },
+  {
+    "name": "Dragonian",
+    "type": "golden",
+    "probability": 464060,
+    "health": 34780,
+    "rarity": "mythical"
+  },
+  {
+    "name": "Medusa",
+    "type": "normal",
+    "probability": 58050,
+    "health": 4350,
+    "rarity": "legendary"
+  },
+  {
+    "name": "Medusa",
+    "type": "shiny",
+    "probability": 290250,
+    "health": 21750,
+    "rarity": "mythical"
+  },
+  {
+    "name": "Medusa",
+    "type": "golden",
+    "probability": 580500,
+    "health": 43500,
+    "rarity": "mythical"
+  },
+  {
+    "name": "??? 1",
+    "type": "normal",
+    "probability": 72563,
+    "health": 5438,
+    "rarity": "mythical"
+  },
+  {
+    "name": "??? 1",
+    "type": "shiny",
+    "probability": 362813,
+    "health": 27188,
+    "rarity": "mythical"
+  },
+  {
+    "name": "??? 1",
+    "type": "golden",
+    "probability": 725625,
+    "health": 54375,
+    "rarity": "mythical"
+  },
+  {
+    "name": "??? 2",
+    "type": "normal",
+    "probability": 90703,
+    "health": 6797,
+    "rarity": "mythical"
+  },
+  {
+    "name": "??? 2",
+    "type": "shiny",
+    "probability": 453516,
+    "health": 33984,
+    "rarity": "mythical"
+  },
+  {
+    "name": "??? 2",
+    "type": "golden",
+    "probability": 907031,
+    "health": 67969,
+    "rarity": "mythical"
+  }
+]
