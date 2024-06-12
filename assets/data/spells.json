@@ -1,156 +1,178 @@
 [
     {
+        "index": 0,
         "name": "Fireball",
         "type": "normal",
         "probability": 1,
-        "damage": 30,
+        "added": 30,
         "rarity": "common"
     },
     {
+        "index": 0,
         "name": "Ice Shard",
         "type": "normal",
         "probability": 3,
-        "damage": 30,
+        "added": 30,
         "rarity": "common"
     },
     {
+        "index": 0,
         "name": "Earth Throw",
         "type": "normal",
         "probability": 9,
-        "damage": 31,
+        "added": 31,
         "rarity": "common"
     },
     {
+        "index": 0,
         "name": "Magic Bow",
         "type": "normal",
         "probability": 25,
-        "damage": 33,
+        "added": 33,
         "rarity": "common"
     },
     {
+        "index": 0,
         "name": "Azure Flames",
         "type": "normal",
         "probability": 54,
-        "damage": 35,
+        "added": 35,
         "rarity": "common"
     },
     {
+        "index": 0,
         "name": "Gravity Abuse",
         "type": "normal",
         "probability": 510,
-        "damage": 81,
+        "added": 81,
         "rarity": "common"
     },
     {
+        "index": 0,
         "name": "Self Destruction",
         "type": "normal",
         "probability": 1430,
-        "damage": 173,
+        "added": 173,
         "rarity": "common"
     },
     {
+        "index": 0,
         "name": "Lightning Throw",
         "type": "normal",
         "probability": 3090,
-        "damage": 339,
+        "added": 339,
         "rarity": "un-common"
     },
     {
+        "index": 0,
         "name": "Sea Tentacles",
         "type": "normal",
         "probability": 5940,
-        "damage": 624,
+        "added": 624,
         "rarity": "rare"
     },
     {
+        "index": 0,
         "name": "Justic",
         "type": "normal",
         "probability": 10610,
-        "damage": 1090,
+        "added": 1090,
         "rarity": "epic"
     },
     {
+        "index": 0,
         "name": "Lighting Beam",
         "type": "normal",
         "probability": 18050,
-        "damage": 1830,
+        "added": 1830,
         "rarity": "legendary"
     },
     {
+        "index": 0,
         "name": "Ghastly Hook",
         "type": "normal",
         "probability": 29630,
-        "damage": 748,
+        "added": 748,
         "rarity": "legendary"
     },
     {
+        "index": 0,
         "name": "Scorching Strike",
         "type": "normal",
         "probability": 47360,
-        "damage": 477,
+        "added": 477,
         "rarity": "legendary"
     },
     {
+        "index": 0,
         "name": "Void Cage",
         "type": "normal",
         "probability": 74160,
-        "damage": 745,
+        "added": 745,
         "rarity": "legendary"
     },
     {
+        "index": 0,
         "name": "???",
         "type": "normal",
         "probability": "???",
-        "damage": "???",
+        "added": "???",
         "rarity": "mythical"
     },
     {
+        "index": 0,
         "name": "???",
         "type": "normal",
         "probability": "???",
-        "damage": "???",
+        "added": "???",
         "rarity": "mythical"
     },
     {
+        "index": 0,
         "name": "???",
         "type": "normal",
         "probability": "???",
-        "damage": "???",
+        "added": "???",
         "rarity": "mythical"
     },
     {
+        "index": 0,
         "name": "Crimson Chains",
         "type": "normal",
         "probability": 391540,
-        "damage": 3920,
+        "added": 3920,
         "rarity": "mythical"
     },
     {
+        "index": 0,
         "name": "???",
         "type": "normal",
         "probability": "???",
-        "damage": "???",
+        "added": "???",
         "rarity": "mythical"
     },
     {
+        "index": 0,
         "name": "???",
         "type": "normal",
         "probability": "???",
-        "damage": "???",
+        "added": "???",
         "rarity": "mythical"
     },
     {
+        "index": 0,
         "name": "???",
         "type": "normal",
         "probability": "???",
-        "damage": "???",
+        "added": "???",
         "rarity": "mythical"
     },
     {
+        "index": 0,
         "name": "???",
         "type": "normal",
         "probability": "???",
-        "damage": "???",
+        "added": "???",
         "rarity": "mythical"
     }
 ]

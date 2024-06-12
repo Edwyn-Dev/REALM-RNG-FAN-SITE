@@ -8,7 +8,7 @@
 }
 
 body {
-  background: rgb(44, 44, 44,0.80);
+  background: rgb(44, 44, 44, 0.80);
   color: #333;
   margin: 0;
   padding: 20px;
@@ -21,7 +21,6 @@ body {
 
 .container {
   font-size: 20px;
-  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
   background-color: #ffffff;
@@ -110,7 +109,7 @@ h1 {
 
 .rarity-btn[data-rarity="epic"],
 .race-content[data-rarity="epic"] {
-  background-color: rgba(158, 0, 158, 0.692);
+  background-color: rgb(133, 0, 133);
 }
 
 .rarity-btn[data-rarity="legendary"],
@@ -124,7 +123,7 @@ h1 {
 }
 
 .rarity-btn[data-rarity="all"] {
-  background-color: rgb(44, 44, 44,0.80);
+  background-color: rgb(44, 44, 44, 0.80);
 }
 
 
@@ -140,7 +139,21 @@ h1 {
   justify-content: center;
 }
 
+#span-index {
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 0.9em;
+  z-index: 10;
+}
+
 .race-card {
+  position: relative;
   text-align: center;
   flex: 0 1 calc(25% - 20px);
   background-color: #ffffff;
@@ -174,7 +187,8 @@ h1 {
   font-size: 1.4em;
   color: #333;
   margin-bottom: 10px;
-  text-transform: capitalize;font-weight: bold;
+  text-transform: capitalize;
+  font-weight: bold;
 }
 
 .race-description {
@@ -200,12 +214,16 @@ h1 {
   background-color: #333;
   border-radius: 10px;
   color: #fff;
-  
+
 }
 
 .stat-label {
   font-weight: bold;
   display: block;
+}
+
+#img-variant {
+  width: 13%;
 }
 
 @media (max-width: 1200px) {

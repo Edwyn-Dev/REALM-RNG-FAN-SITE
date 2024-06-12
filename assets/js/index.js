@@ -14,18 +14,25 @@ $(document).ready(function () {
         return value;
     }
 
+    function setIndex(data) {
+        data.forEach((item, index) => {
+            item.index = index + 1;
+        });
+    }
+
     function renderRaces(data) {
         raceContainer.empty();
         data.forEach(details => {
             const card = $(`<div class="race-card"></div>`);
             const content = $(`<div class="race-content" data-rarity="${details.rarity}"></div>`);
-            const title = $(`<div class="race-title">${details.name} (${details.type})</div>`);
+            const title = $(`<div class="race-title">${details.type === 'normal' ? `` : `${details.type}`} ${details.name}</div>`);
+            const spanIndex = $(`<span id="span-index">🗂️${details.index}</span>`);
             const stats = $('<div class="race-stats"></div>');
 
-            stats.append(`<div class="race-stat"><span class="stat-label">❤️ ${formatNumber(100 + details.health)}</div></span>`);
-            stats.append(`<div class="race-stat"><span class="stat-label">🎲 1 in ${formatNumber(details.probability)}</div></span>`);
+            stats.append(`<div class="race-stat"><span class="stat-label">❤️ ${formatNumber(100 + details.added)}</span></div>`);
+            stats.append(`<div class="race-stat"><span class="stat-label">🎲 1 in ${formatNumber(details.probability)}</span></div>`);
 
-            content.append(title, stats);
+            content.append(spanIndex, title, stats); // Ajoutez spanIndex avant title
             card.append(content);
             raceContainer.append(card);
         });
@@ -37,12 +44,13 @@ $(document).ready(function () {
             const card = $(`<div class="race-card"></div>`);
             const content = $(`<div class="race-content" data-rarity="${details.rarity}"></div>`);
             const title = $(`<div class="race-title">${details.name}</div>`);
+            const spanIndex = $(`<span id="span-index">🗂️${details.index}</span>`);
             const stats = $('<div class="race-stats"></div>');
 
-            stats.append(`<div class="race-stat"><span class="stat-label">⚔️ ${formatNumber(details.damage)}</div></span>`);
-            stats.append(`<div class="race-stat"><span class="stat-label">🎲 1 in ${formatNumber(details.probability)}</div></span>`);
+            stats.append(`<div class="race-stat"><span class="stat-label">⚔️ ${formatNumber(details.added)}</span></div>`);
+            stats.append(`<div class="race-stat"><span class="stat-label">🎲 1 in ${formatNumber(details.probability)}</span></div>`);
 
-            content.append(title, stats);
+            content.append(spanIndex, title, stats); // Ajoutez spanIndex avant title
             card.append(content);
             raceContainer.append(card);
         });
@@ -58,9 +66,9 @@ $(document).ready(function () {
 
         data.sort((a, b) => {
             if (order === 'asc') {
-                return a.probability - b.probability;
+                return a.added - b.added;
             } else {
-                return b.probability - a.probability;
+                return b.added - a.added;
             }
         });
 
@@ -87,31 +95,31 @@ $(document).ready(function () {
         const rarity = $(this).data('rarity');
         switch (rarity) {
             case 'common':
-                $('body').css('background-color', 'rgb(168, 168, 168, 0.80)');
+                $('body').css('background-color', 'rgba(168, 168, 168, 0.80)');
                 filteredData = (currentType === 'races' ? racesData : spellsData).filter(item => item.rarity === rarity);
                 break;
             case 'un-common':
-                $('body').css('background-color', 'rgb(17, 148, 17, 0.80)');
+                $('body').css('background-color', 'rgba(17, 148, 17, 0.80)');
                 filteredData = (currentType === 'races' ? racesData : spellsData).filter(item => item.rarity === rarity);
                 break;
             case 'rare':
-                $('body').css('background-color', 'rgb(64, 123, 199, 0.80)');
+                $('body').css('background-color', 'rgba(64, 123, 199, 0.80)');
                 filteredData = (currentType === 'races' ? racesData : spellsData).filter(item => item.rarity === rarity);
                 break;
             case 'epic':
-                $('body').css('background-color', 'rgba(158, 0, 158, 0.692, 0.80)');
+                $('body').css('background-color', 'rgba(133, 0, 133, 0.80)');
                 filteredData = (currentType === 'races' ? racesData : spellsData).filter(item => item.rarity === rarity);
                 break;
             case 'legendary':
-                $('body').css('background-color', 'rgb(170, 107, 12, 0.80)');
+                $('body').css('background-color', 'rgba(170, 107, 12, 0.80)');
                 filteredData = (currentType === 'races' ? racesData : spellsData).filter(item => item.rarity === rarity);
                 break;
             case 'mythical':
-                $('body').css('background-color', 'rgb(201, 35, 35, 0.80)');
+                $('body').css('background-color', 'rgba(201, 35, 35, 0.80)');
                 filteredData = (currentType === 'races' ? racesData : spellsData).filter(item => item.rarity === rarity);
                 break;
             case 'all':
-                $('body').css('background-color', 'rgb(44, 44, 44, 0.80)');
+                $('body').css('background-color', 'rgba(44, 44, 44, 0.80)');
                 filteredData = currentType === 'races' ? racesData : spellsData;
                 break;
             default:
@@ -138,6 +146,7 @@ $(document).ready(function () {
     fetch('assets/data/races.json')
         .then(response => response.json())
         .then(data => {
+            setIndex(data); // Set index for races data
             racesData = data;
             if (currentType === 'races') {
                 filteredData = data;
@@ -151,6 +160,7 @@ $(document).ready(function () {
     fetch('assets/data/spells.json')
         .then(response => response.json())
         .then(data => {
+            setIndex(data); // Set index for spells data
             spellsData = data;
             if (currentType === 'spells') {
                 filteredData = data;

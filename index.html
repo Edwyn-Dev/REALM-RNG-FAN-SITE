@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,33 +9,35 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="assets/js/index.js" defer></script>
 </head>
+
 <body>
     <div class="container">
         <div class="filters">
             <input type="text" id="search-bar" placeholder='Try Search : "Human" or "Fireball"'>
+            <span>Sort the races or spells by stats</span>
             <div class="sort-buttons">
-                <button id="sort-asc" class="sort-btn">↝</button>
+                <button id="sort-asc" class="sort-btn">↝ | Ascending</button>
                 <hr>
-                <button id="sort-desc" class="sort-btn">↜</button>
+                <button id="sort-desc" class="sort-btn">Descending | ↜</button>
             </div>
+            <span>Choose the rarity to view or simply view all</span>
             <div class="rarity-filters">
-                <button class="rarity-btn" data-rarity="common"></button>
+                <button class="rarity-btn" data-rarity="common">⬜</button>
                 <hr>
-                <button class="rarity-btn" data-rarity="un-common"></button>
+                <button class="rarity-btn" data-rarity="un-common">🟩</button>
                 <hr>
-                <button class="rarity-btn" data-rarity="rare"></button>
+                <button class="rarity-btn" data-rarity="rare">🟦</button>
                 <hr>
                 <button class="rarity-btn" data-rarity="all">ALL</button>
                 <hr>
-                <button class="rarity-btn" data-rarity="epic"></button>
+                <button class="rarity-btn" data-rarity="epic">🟪</button>
                 <hr>
-                <button class="rarity-btn" data-rarity="legendary"></button>
+                <button class="rarity-btn" data-rarity="legendary">🟨</button>
                 <hr>
-                <button class="rarity-btn" data-rarity="mythical"></button>
+                <button class="rarity-btn" data-rarity="mythical">🟥</button>
             </div>
-            The images will come one day ^^
-            <br>
-            When I find the courage!
+            <span>The images will come one day ^^</span>
+            <span>When I find the courage!</span>
             <div id="search-choice">
                 <button id="sort-race" class="sort-btn">Races</button>
                 <hr>
@@ -44,4 +47,5 @@
         <div id="race-container"></div>
     </div>
 </body>
+
 </html>
