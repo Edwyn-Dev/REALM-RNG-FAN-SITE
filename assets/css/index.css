@@ -8,7 +8,7 @@
 }
 
 body {
-  background: rgb(44, 44, 44, 0.80);
+  background: rgba(44, 44, 44, 0.80);
   color: #333;
   margin: 0;
   padding: 20px;
@@ -222,8 +222,8 @@ h1 {
   display: block;
 }
 
-#img-variant {
-  width: 13%;
+#nextUpdate {
+ background-color: #555555;
 }
 
 @media (max-width: 1200px) {
@@ -235,5 +235,10 @@ h1 {
 @media (max-width: 630px) {
   .race-card {
     flex: 0 1 calc(100% - 20px);
+  }
+
+  #search-choice {
+    display: flex;
+    flex-wrap: wrap;
   }
 }

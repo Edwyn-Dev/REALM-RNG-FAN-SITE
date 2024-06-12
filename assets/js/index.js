@@ -1,5 +1,15 @@
+
+
+
 $(document).ready(function () {
     const raceContainer = $('#race-container');
+    function renderNextUpdate() {
+        raceContainer.empty();
+        const card = $(`<div class="race-card"></div>`);
+        const content = $(`<div class="race-content"><p>The buttons below are prepared in advance in anticipation of future updates that could introduce new collectible content beyond spells, races, and taunts!</p></div>`);
+        card.append(content);
+        raceContainer.append(card);
+    }
     let racesData = [];
     let spellsData = [];
     let tauntsData = [];
@@ -20,11 +30,8 @@ $(document).ready(function () {
             item.index = index + 1;
         });
     }
-
     function renderRaces(data) {
         raceContainer.empty();
-        // $('.rarity-filters').show()
-        // $('.info-span-index').show()
         data.forEach(details => {
             const card = $(`<div class="race-card"></div>`);
             const content = $(`<div class="race-content" data-rarity="${details.rarity}"></div>`);
@@ -43,8 +50,6 @@ $(document).ready(function () {
 
     function renderSpells(data) {
         raceContainer.empty();
-        // $('.rarity-filters').show()
-        // $('.info-span-index').show()
         data.forEach(details => {
             const card = $(`<div class="race-card"></div>`);
             const content = $(`<div class="race-content" data-rarity="${details.rarity}"></div>`);
@@ -63,9 +68,6 @@ $(document).ready(function () {
 
     function renderTaunts(data) {
         raceContainer.empty();
-        // $('.rarity-filters').hide()
-        // $('.info-span-index').hide()
-        // $('body').css('background-color', 'rgba(44, 44, 44, 0.80)');
         data.forEach(details => {
             const card = $(`<div class="race-card"></div>`);
             const content = $(`<div class="race-content" data-rarity="${details.rarity}"></div>`);
@@ -121,40 +123,31 @@ $(document).ready(function () {
     $('#sort-desc').click(function () {
         filterAndSortData('desc');
     });
-
     $('.rarity-btn').click(function () {
         const rarity = $(this).data('rarity');
         switch (rarity) {
             case 'common':
-                $('body').css('background-color', 'rgba(168, 168, 168, 0.80)');
                 filteredData = (currentType === 'races' ? racesData : (currentType === 'spells' ? spellsData : tauntsData)).filter(item => item.rarity === rarity);
                 break;
             case 'un-common':
-                $('body').css('background-color', 'rgba(17, 148, 17, 0.80)');
                 filteredData = (currentType === 'races' ? racesData : (currentType === 'spells' ? spellsData : tauntsData)).filter(item => item.rarity === rarity);
                 break;
             case 'rare':
-                $('body').css('background-color', 'rgba(64, 123, 199, 0.80)');
                 filteredData = (currentType === 'races' ? racesData : (currentType === 'spells' ? spellsData : tauntsData)).filter(item => item.rarity === rarity);
                 break;
             case 'epic':
-                $('body').css('background-color', 'rgba(133, 0, 133, 0.80)');
                 filteredData = (currentType === 'races' ? racesData : (currentType === 'spells' ? spellsData : tauntsData)).filter(item => item.rarity === rarity);
                 break;
             case 'legendary':
-                $('body').css('background-color', 'rgba(170, 107, 12, 0.80)');
                 filteredData = (currentType === 'races' ? racesData : (currentType === 'spells' ? spellsData : tauntsData)).filter(item => item.rarity === rarity);
                 break;
             case 'mythical':
-                $('body').css('background-color', 'rgba(201, 35, 35, 0.80)');
                 filteredData = (currentType === 'races' ? racesData : (currentType === 'spells' ? spellsData : tauntsData)).filter(item => item.rarity === rarity);
                 break;
             case 'all':
-                $('body').css('background-color', 'rgba(44, 44, 44, 0.80)');
                 filteredData = currentType === 'races' ? racesData : (currentType === 'spells' ? spellsData : tauntsData);
                 break;
             default:
-                $('body').css('background-color', ''); // Reset background for other cases
                 filteredData = (currentType === 'races' ? racesData : (currentType === 'spells' ? spellsData : tauntsData)).filter(item => item.rarity === rarity);
                 break;
         }
@@ -177,6 +170,10 @@ $(document).ready(function () {
         currentType = 'taunts';
         filteredData = tauntsData;
         filterAndSortData();
+    });
+
+    $('#nextUpdate').click(function () {
+        renderNextUpdate()
     });
 
     // Initial fetch and render
