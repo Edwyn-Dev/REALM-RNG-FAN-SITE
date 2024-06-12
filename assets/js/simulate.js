@@ -52,17 +52,18 @@ $(document).ready(async function () {
         $('#dropdown-choice').empty();
         currentChoice = $('#roll-choice').val();
         data = currentChoice === 'races' ? racesData : spellsData;
-        $('#dropdown-choice').append(`<option value="races" id="disable-choice">Choose your ${currentChoice}</option>`);
+        $('#dropdown-choice').append(`<option value="races" id="disable-choice">Choose your ${currentChoice} (${data.length} available)</option>`);
 
         function renderChoice(data) {
             data.forEach(details => {
-                $('#dropdown-choice').append(`<option value="${details.type + '-' + details.name}">${details.type === 'normal' ? `` : `${capitalize(details.type)}`} ${details.name}</option>`);
+                $('#dropdown-choice').append(`<option value="${details.type + '-' + details.name}">${details.type === 'normal' ? `` : `${capitalize(details.type)}`} ${details.name} | 🎲  1 in ${formatNumber(details.probability)}</option>`);
             });
         }
         renderChoice(data);
     });
 
     $('#dropdown-choice').on('change', function () {
+        $('#disable-choice').hide();
         $('.part3').show();
         $('.part4').show();
     });
