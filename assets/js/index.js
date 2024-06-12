@@ -5,6 +5,10 @@ $(document).ready(function () {
     const raceContainer = $('#race-container');
     function renderNextUpdate() {
         raceContainer.empty();
+        $('.info-span-index').hide()
+        $('.rarity-filters').hide()
+        $('.sort-buttons').hide()
+        $('#search-bar').hide()
         const card = $(`<div class="race-card"></div>`);
         const content = $(`<div class="race-content"><p>The buttons below are prepared in advance in anticipation of future updates that could introduce new collectible content beyond spells, races, and taunts!</p></div>`);
         card.append(content);
@@ -32,8 +36,10 @@ $(document).ready(function () {
     }
     function renderRaces(data) {
         raceContainer.empty();
-        $('info-span-index').show()
-        $('rarity-filters').show()
+        $('.info-span-index').show()
+        $('.rarity-filters').show()
+        $('.sort-buttons').show()
+        $('#search-bar').show()
         data.forEach(details => {
             const card = $(`<div class="race-card"></div>`);
             const content = $(`<div class="race-content" data-rarity="${details.rarity}"></div>`);
@@ -52,8 +58,10 @@ $(document).ready(function () {
 
     function renderSpells(data) {
         raceContainer.empty();
-        $('info-span-index').show()
-        $('rarity-filters').show()
+        $('.info-span-index').show()
+        $('.rarity-filters').show()
+        $('.sort-buttons').show()
+        $('#search-bar').show()
         data.forEach(details => {
             const card = $(`<div class="race-card"></div>`);
             const content = $(`<div class="race-content" data-rarity="${details.rarity}"></div>`);
@@ -72,8 +80,10 @@ $(document).ready(function () {
 
     function renderTaunts(data) {
         raceContainer.empty();
-        $('info-span-index').hide()
-        $('rarity-filters').hide()
+        $('.info-span-index').hide()
+        $('.rarity-filters').hide()
+        $('.sort-buttons').show()
+        $('#search-bar').show()
         data.forEach(details => {
             const card = $(`<div class="race-card"></div>`);
             const content = $(`<div class="race-content" data-rarity="${details.rarity}"></div>`);
