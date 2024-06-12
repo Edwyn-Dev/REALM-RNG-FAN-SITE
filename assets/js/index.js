@@ -32,6 +32,8 @@ $(document).ready(function () {
     }
     function renderRaces(data) {
         raceContainer.empty();
+        $('info-span-index').show()
+        $('rarity-filters').show()
         data.forEach(details => {
             const card = $(`<div class="race-card"></div>`);
             const content = $(`<div class="race-content" data-rarity="${details.rarity}"></div>`);
@@ -50,6 +52,8 @@ $(document).ready(function () {
 
     function renderSpells(data) {
         raceContainer.empty();
+        $('info-span-index').show()
+        $('rarity-filters').show()
         data.forEach(details => {
             const card = $(`<div class="race-card"></div>`);
             const content = $(`<div class="race-content" data-rarity="${details.rarity}"></div>`);
@@ -68,6 +72,8 @@ $(document).ready(function () {
 
     function renderTaunts(data) {
         raceContainer.empty();
+        $('info-span-index').hide()
+        $('rarity-filters').hide()
         data.forEach(details => {
             const card = $(`<div class="race-card"></div>`);
             const content = $(`<div class="race-content" data-rarity="${details.rarity}"></div>`);
