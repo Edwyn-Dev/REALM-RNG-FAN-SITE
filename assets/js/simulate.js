@@ -56,7 +56,7 @@ $(document).ready(async function () {
 
         function renderChoice(data) {
             data.forEach(details => {
-                $('#dropdown-choice').append(`<option value="${details.type + '-' + details.name}">${details.type === 'normal' ? `` : `${capitalize(details.type)}`} ${details.name} | 🎲 1 in ${formatNumber(details.probability)}</option>`);
+                $('#dropdown-choice').append(`<option value="${details.type + '-' + details.name}">${details.type === 'normal' ? `` : `${capitalize(details.type)}`} ${details.name}</option>`);
             });
         }
         renderChoice(data);
@@ -125,12 +125,12 @@ $(document).ready(async function () {
         resultsDiv.empty();
         const card = $('<div class="result-card"></div>');
         const content = $(`<div class="result-content" data-rarity="${selectedData.rarity}" style="background-color: ${getRarityColor(selectedData.rarity)}"></div>`);
-        const title = $(`<div class="result-title">${selectedData.type === 'normal' ? `` : `${capitalize(selectedData.type)}`} ${selectedData.name}</div>`);
+        const title = $(`<div class="result-title">${capitalize(selectedData.type)} ${selectedData.name}</div>`);
         const stats = $('<div class="result-stats"></div>');
         stats.append(`<div class="result-stat"><span class="stat-label">🎲 ${formatNumber(avgRolls.toFixed(0))} Avg Rolls Needed</span></div>`);
 
         const toggleBar = $('<div class="toggle-bar"><span class="toggle-icon">▼</span> More Info</div>');
-        const extraInfo = $(`<div class="extra-info"><p>This figure is an estimate based on a total of ${formatNumber(attempts)} simulations. It represents an idea of the average number of rolls needed to obtain the desired result.</p><p>Procedure: For each simulation, a random number between 0 and 1 is generated. If this number is less than or equal to the calculated probability (1 / Probability), the desired race or spell is obtained. The average is then calculated over all simulations.</p></div>`);
+        const extraInfo = $(`<div class="extra-info"><p>This figure is an estimate based on a total of ${formatNumber(attempts)} simulations. It represents an idea of the average number of rolls needed to obtain the desired result.</p><p>Procedure: For each simulation, a random number between 0 and 1 is generated after each roll. If this number is less than or equal to the calculated probability (1 / Probability), the desired race or spell is obtained. This process is repeated until the desired race or spell is obtained for each simulation. The total number of rolls for all simulations is then summed and divided by the number of simulations to get the average.</p></div>`);
 
         toggleBar.on('click', function() {
             extraInfo.slideToggle();
