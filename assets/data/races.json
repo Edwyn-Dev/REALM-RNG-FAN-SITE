@@ -433,50 +433,10 @@
   },
   {
     "index": 0,
-    "name": "Zeus",
+    "name": "Zeus (Exclusive)",
     "type": "normal",
-    "probability": 72563,
-    "values": 5438,
-    "rarity": "mythical"
-  },
-  {
-    "index": 0,
-    "name": "Zeus",
-    "type": "shiny",
-    "probability": 362813,
-    "values": 27188,
-    "rarity": "mythical"
-  },
-  {
-    "index": 0,
-    "name": "Zeus",
-    "type": "golden",
-    "probability": 725625,
-    "values": 54375,
-    "rarity": "mythical"
-  },
-  {
-    "index": 0,
-    "name": "???",
-    "type": "normal",
-    "probability": 90703,
-    "values": 6797,
-    "rarity": "mythical"
-  },
-  {
-    "index": 0,
-    "name": "???",
-    "type": "shiny",
-    "probability": 453516,
-    "values": 33984,
-    "rarity": "mythical"
-  },
-  {
-    "index": 0,
-    "name": "???",
-    "type": "golden",
-    "probability": 907031,
-    "values": 67969,
+    "probability": 1000000,
+    "values": 75000,
     "rarity": "mythical"
   }
 ]
