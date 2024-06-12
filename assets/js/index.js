@@ -23,8 +23,8 @@ $(document).ready(function () {
 
     function renderRaces(data) {
         raceContainer.empty();
-        $('.rarity-filters').show()
-        $('.info-span-index').show()
+        // $('.rarity-filters').show()
+        // $('.info-span-index').show()
         data.forEach(details => {
             const card = $(`<div class="race-card"></div>`);
             const content = $(`<div class="race-content" data-rarity="${details.rarity}"></div>`);
@@ -43,8 +43,8 @@ $(document).ready(function () {
 
     function renderSpells(data) {
         raceContainer.empty();
-        $('.rarity-filters').show()
-        $('.info-span-index').show()
+        // $('.rarity-filters').show()
+        // $('.info-span-index').show()
         data.forEach(details => {
             const card = $(`<div class="race-card"></div>`);
             const content = $(`<div class="race-content" data-rarity="${details.rarity}"></div>`);
@@ -63,9 +63,9 @@ $(document).ready(function () {
 
     function renderTaunts(data) {
         raceContainer.empty();
-        $('.rarity-filters').hide()
-        $('.info-span-index').hide()
-        $('body').css('background-color', 'rgba(44, 44, 44, 0.80)');
+        // $('.rarity-filters').hide()
+        // $('.info-span-index').hide()
+        // $('body').css('background-color', 'rgba(44, 44, 44, 0.80)');
         data.forEach(details => {
             const card = $(`<div class="race-card"></div>`);
             const content = $(`<div class="race-content" data-rarity="${details.rarity}"></div>`);
@@ -211,7 +211,7 @@ $(document).ready(function () {
     fetch('assets/data/taunts.json')
         .then(response => response.json())
         .then(data => {
-            setIndex(data); // Set index for spells data
+            setIndex(data); // Set index for taunts data
             tauntsData = data;
             if (currentType === 'taunts') {
                 filteredData = data;
