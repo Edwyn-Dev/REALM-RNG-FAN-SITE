@@ -126,7 +126,7 @@ $(document).ready(async function () {
         resultsDiv.empty();
         const card = $('<div class="result-card"></div>');
         const content = $(`<div class="result-content" data-rarity="${selectedData.rarity}" style="background-color: ${getRarityColor(selectedData.rarity)}"></div>`);
-        const title = $(`<div class="result-title">${capitalize(selectedData.type)} ${selectedData.name}</div>`);
+        const title = $(`<div class="result-title">${selectedData.type === "normal" ? '':capitalize(selectedData.type)} ${selectedData.name}</div>`);
         const stats = $('<div class="result-stats"></div>');
         stats.append(`<div class="result-stat"><span class="stat-label">🎲 ${formatNumber(avgRolls.toFixed(0))} Avg Rolls Needed</span></div>`);
 
