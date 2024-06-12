@@ -65,6 +65,7 @@ $(document).ready(function () {
         raceContainer.empty();
         $('.rarity-filters').hide()
         $('.info-span-index').hide()
+        $('body').css('background-color', 'rgba(44, 44, 44, 0.80)');
         data.forEach(details => {
             const card = $(`<div class="race-card"></div>`);
             const content = $(`<div class="race-content" data-rarity="${details.rarity}"></div>`);
