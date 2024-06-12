@@ -4,7 +4,7 @@
         "name": "Fireball",
         "type": "normal",
         "probability": 1,
-        "added": 30,
+        "values": 30,
         "rarity": "common"
     },
     {
@@ -12,7 +12,7 @@
         "name": "Ice Shard",
         "type": "normal",
         "probability": 3,
-        "added": 30,
+        "values": 30,
         "rarity": "common"
     },
     {
@@ -20,7 +20,7 @@
         "name": "Earth Throw",
         "type": "normal",
         "probability": 9,
-        "added": 31,
+        "values": 31,
         "rarity": "common"
     },
     {
@@ -28,7 +28,7 @@
         "name": "Magic Bow",
         "type": "normal",
         "probability": 25,
-        "added": 33,
+        "values": 33,
         "rarity": "common"
     },
     {
@@ -36,7 +36,7 @@
         "name": "Azure Flames",
         "type": "normal",
         "probability": 54,
-        "added": 35,
+        "values": 35,
         "rarity": "common"
     },
     {
@@ -44,7 +44,7 @@
         "name": "Gravity Abuse",
         "type": "normal",
         "probability": 510,
-        "added": 81,
+        "values": 81,
         "rarity": "common"
     },
     {
@@ -52,7 +52,7 @@
         "name": "Self Destruction",
         "type": "normal",
         "probability": 1430,
-        "added": 173,
+        "values": 173,
         "rarity": "common"
     },
     {
@@ -60,7 +60,7 @@
         "name": "Lightning Throw",
         "type": "normal",
         "probability": 3090,
-        "added": 339,
+        "values": 339,
         "rarity": "un-common"
     },
     {
@@ -68,7 +68,7 @@
         "name": "Sea Tentacles",
         "type": "normal",
         "probability": 5940,
-        "added": 624,
+        "values": 624,
         "rarity": "rare"
     },
     {
@@ -76,7 +76,7 @@
         "name": "Justic",
         "type": "normal",
         "probability": 10610,
-        "added": 1090,
+        "values": 1090,
         "rarity": "epic"
     },
     {
@@ -84,7 +84,7 @@
         "name": "Lighting Beam",
         "type": "normal",
         "probability": 18050,
-        "added": 1830,
+        "values": 1830,
         "rarity": "legendary"
     },
     {
@@ -92,7 +92,7 @@
         "name": "Ghastly Hook",
         "type": "normal",
         "probability": 29630,
-        "added": 748,
+        "values": 748,
         "rarity": "legendary"
     },
     {
@@ -100,7 +100,7 @@
         "name": "Scorching Strike",
         "type": "normal",
         "probability": 47360,
-        "added": 477,
+        "values": 477,
         "rarity": "legendary"
     },
     {
@@ -108,7 +108,7 @@
         "name": "Void Cage",
         "type": "normal",
         "probability": 74160,
-        "added": 745,
+        "values": 745,
         "rarity": "legendary"
     },
     {
@@ -116,7 +116,7 @@
         "name": "???",
         "type": "normal",
         "probability": "???",
-        "added": "???",
+        "values": "???",
         "rarity": "mythical"
     },
     {
@@ -124,7 +124,7 @@
         "name": "???",
         "type": "normal",
         "probability": "???",
-        "added": "???",
+        "values": "???",
         "rarity": "mythical"
     },
     {
@@ -132,7 +132,7 @@
         "name": "???",
         "type": "normal",
         "probability": "???",
-        "added": "???",
+        "values": "???",
         "rarity": "mythical"
     },
     {
@@ -140,7 +140,7 @@
         "name": "Crimson Chains",
         "type": "normal",
         "probability": 391540,
-        "added": 3920,
+        "values": 3920,
         "rarity": "mythical"
     },
     {
@@ -148,7 +148,7 @@
         "name": "???",
         "type": "normal",
         "probability": "???",
-        "added": "???",
+        "values": "???",
         "rarity": "mythical"
     },
     {
@@ -156,7 +156,7 @@
         "name": "???",
         "type": "normal",
         "probability": "???",
-        "added": "???",
+        "values": "???",
         "rarity": "mythical"
     },
     {
@@ -164,7 +164,7 @@
         "name": "???",
         "type": "normal",
         "probability": "???",
-        "added": "???",
+        "values": "???",
         "rarity": "mythical"
     },
     {
@@ -172,7 +172,7 @@
         "name": "???",
         "type": "normal",
         "probability": "???",
-        "added": "???",
+        "values": "???",
         "rarity": "mythical"
     }
 ]

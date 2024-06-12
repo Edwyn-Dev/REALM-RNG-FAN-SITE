@@ -2,6 +2,7 @@ $(document).ready(function () {
     const raceContainer = $('#race-container');
     let racesData = [];
     let spellsData = [];
+    let tauntsData = [];
     let filteredData = [];
     let currentType = 'races';
 
@@ -22,6 +23,8 @@ $(document).ready(function () {
 
     function renderRaces(data) {
         raceContainer.empty();
+        $('.rarity-filters').show()
+        $('.info-span-index').show()
         data.forEach(details => {
             const card = $(`<div class="race-card"></div>`);
             const content = $(`<div class="race-content" data-rarity="${details.rarity}"></div>`);
@@ -29,7 +32,7 @@ $(document).ready(function () {
             const spanIndex = $(`<span id="span-index">🗂️${details.index}</span>`);
             const stats = $('<div class="race-stats"></div>');
 
-            stats.append(`<div class="race-stat"><span class="stat-label">❤️ ${formatNumber(100 + details.added)}</span></div>`);
+            stats.append(`<div class="race-stat"><span class="stat-label">❤️ ${formatNumber(100 + details.values)}</span></div>`);
             stats.append(`<div class="race-stat"><span class="stat-label">🎲 1 in ${formatNumber(details.probability)}</span></div>`);
 
             content.append(spanIndex, title, stats); // Ajoutez spanIndex avant title
@@ -40,6 +43,8 @@ $(document).ready(function () {
 
     function renderSpells(data) {
         raceContainer.empty();
+        $('.rarity-filters').show()
+        $('.info-span-index').show()
         data.forEach(details => {
             const card = $(`<div class="race-card"></div>`);
             const content = $(`<div class="race-content" data-rarity="${details.rarity}"></div>`);
@@ -47,8 +52,26 @@ $(document).ready(function () {
             const spanIndex = $(`<span id="span-index">🗂️${details.index}</span>`);
             const stats = $('<div class="race-stats"></div>');
 
-            stats.append(`<div class="race-stat"><span class="stat-label">⚔️ ${formatNumber(details.added)}</span></div>`);
+            stats.append(`<div class="race-stat"><span class="stat-label">⚔️ ${formatNumber(details.values)}</span></div>`);
             stats.append(`<div class="race-stat"><span class="stat-label">🎲 1 in ${formatNumber(details.probability)}</span></div>`);
+
+            content.append(spanIndex, title, stats); // Ajoutez spanIndex avant title
+            card.append(content);
+            raceContainer.append(card);
+        });
+    }
+
+    function renderTaunts(data) {
+        raceContainer.empty();
+        $('.rarity-filters').hide()
+        $('.info-span-index').hide()
+        data.forEach(details => {
+            const card = $(`<div class="race-card"></div>`);
+            const content = $(`<div class="race-content" data-rarity="${details.rarity}"></div>`);
+            const title = $(`<div class="race-title">${details.name}</div>`);
+            const spanIndex = $(`<span id="span-index">🗂️${details.index}</span>`);
+            const stats = $('<div class="race-stats"></div>');
+            stats.append(`<div class="race-stat"><span class="stat-label">${formatNumber(details.values)}🪙</span></div>`);
 
             content.append(spanIndex, title, stats); // Ajoutez spanIndex avant title
             card.append(content);
@@ -66,16 +89,23 @@ $(document).ready(function () {
 
         data.sort((a, b) => {
             if (order === 'asc') {
-                return a.added - b.added;
+                return a.values - b.values;
             } else {
-                return b.added - a.added;
+                return b.values - a.values;
             }
         });
+        switch (currentType) {
+            case 'races':
+                renderRaces(data);
+                break;
 
-        if (currentType === 'races') {
-            renderRaces(data);
-        } else {
-            renderSpells(data);
+            case 'spells':
+                renderSpells(data);
+                break;
+
+            default:
+                renderTaunts(data);
+                break;
         }
     }
 
@@ -142,6 +172,12 @@ $(document).ready(function () {
         filterAndSortData();
     });
 
+    $('#sort-taunts').click(function () {
+        currentType = 'taunts';
+        filteredData = tauntsData;
+        filterAndSortData();
+    });
+
     // Initial fetch and render
     fetch('assets/data/races.json')
         .then(response => response.json())
@@ -169,5 +205,19 @@ $(document).ready(function () {
         })
         .catch(error => {
             console.error('Error fetching spells data:', error);
+        });
+
+    fetch('assets/data/taunts.json')
+        .then(response => response.json())
+        .then(data => {
+            setIndex(data); // Set index for spells data
+            tauntsData = data;
+            if (currentType === 'taunts') {
+                filteredData = data;
+                renderTaunts(data);
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching taunts data:', error);
         });
 });

@@ -1,0 +1,62 @@
+[
+    {
+        "index": 0,
+        "rarity": "common",
+        "name": "Default Dance",
+        "values": 0
+    },
+    {
+        "index": 0,
+        "rarity": "common",
+        "name": "Parrot Party",
+        "values": 2450
+    },
+    {
+        "index": 0,
+        "rarity": "common",
+        "name": "Orange Justice",
+        "values": 2800
+    },
+    {
+        "index": 0,
+        "rarity": "common",
+        "name": "Clapping",
+        "values": 700
+    },
+    {
+        "index": 0,
+        "rarity": "common",
+        "name": "Confused",
+        "values": 525
+    },
+    {
+        "index": 0,
+        "rarity": "common",
+        "name": "Floss",
+        "values": 1925
+    },
+    {
+        "index": 0,
+        "rarity": "common",
+        "name": "Comeback",
+        "values": 3850
+    },
+    {
+        "index": 0,
+        "rarity": "common",
+        "name": "Sit",
+        "values": 350
+    },
+    {
+        "index": 0,
+        "rarity": "common",
+        "name": "Clean Groove",
+        "values": 3150
+    },
+    {
+        "index": 0,
+        "rarity": "common",
+        "name": "Penguin Walk",
+        "values": 1225
+    }
+]

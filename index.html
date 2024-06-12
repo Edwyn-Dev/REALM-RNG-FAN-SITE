@@ -13,14 +13,13 @@
 <body>
     <div class="container">
         <div class="filters">
-            <input type="text" id="search-bar" placeholder='Try Search : "Human" or "Fireball"'>
-            <span>Sort the races or spells by stats</span>
+            <input type="text" id="search-bar" placeholder='Try Search : "Human" | "Fireball" or "Default Dance"'>
             <div class="sort-buttons">
                 <button id="sort-asc" class="sort-btn">↝ | Ascending</button>
                 <hr>
                 <button id="sort-desc" class="sort-btn">Descending | ↜</button>
             </div>
-            <span>Choose the rarity to view or simply view all</span>
+            <span class="info-span-index">Choose the rarity to view or simply view all</span>
             <div class="rarity-filters">
                 <button class="rarity-btn" data-rarity="common"></button>
                 <hr>
@@ -36,12 +35,14 @@
                 <hr>
                 <button class="rarity-btn" data-rarity="mythical"></button>
             </div>
-            <span>The images will come one day ^^</span>
-            <span>When I find the courage!</span>
+            <span class="info-span-index">The images will come one day ^^</span>
+            <span class="info-span-index">When I find the courage!</span>
             <div id="search-choice">
                 <button id="sort-race" class="sort-btn">Races</button>
                 <hr>
                 <button id="sort-spells" class="sort-btn">Spells</button>
+                <hr>
+                <button id="sort-taunts" class="sort-btn">Taunts</button>
             </div>
         </div>
         <div id="race-container"></div>
