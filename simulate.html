@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REALM RNG FAN-SITE - SIMULATE</title>
+    <link rel="stylesheet" href="assets/css/simulate.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/simulate.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="filters">
+            <a href="index.html"><button class="sort-btn">RETURN TO INDEX</button></a>
+            <hr>
+            <form id="form">
+                <div class="form-part">
+                    <label for="roll-choice">Roll : 
+                        <span>(What you want to roll for)</span>
+                    </label>
+                    <select name="roll-choice" id="roll-choice">
+                        <option value="races" id="disable-roll">Choose your choice</option>
+                        <option value="races">Races</option>
+                        <option value="spells">Spells</option>
+                    </select>
+                </div>
+                <div class="form-part part2">
+                    <label for="dropdown-choice">Select : 
+                        <span>(Specific race or spell)</span>
+                    </label>
+                    <select name="dropdown-choice" id="dropdown-choice">
+                        <option value="races" id="disable-choice">Choose your choice</option>
+                    </select>
+                </div>
+                <div class="form-part part3">
+                    <label for="attemps">Attempts : 
+                        <span>(Number of simulations to run)</span>
+                    </label>
+                    <input type="number" id="attemps" name="attemps" min="0" max="1000">
+                </div>
+                <button type="submit" class="form-part part4 sort-btn">START SIMULATION</button>
+            </form>            
+        </div>
+        <div id="results" class="results"></div>
+    </div>
+</body>
+
+</html>
