@@ -127,35 +127,35 @@ $(document).ready(function () {
         switch (rarity) {
             case 'common':
                 $('body').css('background-color', 'rgba(168, 168, 168, 0.80)');
-                filteredData = (currentType === 'races' ? racesData : spellsData).filter(item => item.rarity === rarity);
+                filteredData = (currentType === 'races' ? racesData : (currentType === 'spells' ? spellsData : tauntsData)).filter(item => item.rarity === rarity);
                 break;
             case 'un-common':
                 $('body').css('background-color', 'rgba(17, 148, 17, 0.80)');
-                filteredData = (currentType === 'races' ? racesData : spellsData).filter(item => item.rarity === rarity);
+                filteredData = (currentType === 'races' ? racesData : (currentType === 'spells' ? spellsData : tauntsData)).filter(item => item.rarity === rarity);
                 break;
             case 'rare':
                 $('body').css('background-color', 'rgba(64, 123, 199, 0.80)');
-                filteredData = (currentType === 'races' ? racesData : spellsData).filter(item => item.rarity === rarity);
+                filteredData = (currentType === 'races' ? racesData : (currentType === 'spells' ? spellsData : tauntsData)).filter(item => item.rarity === rarity);
                 break;
             case 'epic':
                 $('body').css('background-color', 'rgba(133, 0, 133, 0.80)');
-                filteredData = (currentType === 'races' ? racesData : spellsData).filter(item => item.rarity === rarity);
+                filteredData = (currentType === 'races' ? racesData : (currentType === 'spells' ? spellsData : tauntsData)).filter(item => item.rarity === rarity);
                 break;
             case 'legendary':
                 $('body').css('background-color', 'rgba(170, 107, 12, 0.80)');
-                filteredData = (currentType === 'races' ? racesData : spellsData).filter(item => item.rarity === rarity);
+                filteredData = (currentType === 'races' ? racesData : (currentType === 'spells' ? spellsData : tauntsData)).filter(item => item.rarity === rarity);
                 break;
             case 'mythical':
                 $('body').css('background-color', 'rgba(201, 35, 35, 0.80)');
-                filteredData = (currentType === 'races' ? racesData : spellsData).filter(item => item.rarity === rarity);
+                filteredData = (currentType === 'races' ? racesData : (currentType === 'spells' ? spellsData : tauntsData)).filter(item => item.rarity === rarity);
                 break;
             case 'all':
                 $('body').css('background-color', 'rgba(44, 44, 44, 0.80)');
-                filteredData = currentType === 'races' ? racesData : spellsData;
+                filteredData = currentType === 'races' ? racesData : (currentType === 'spells' ? spellsData : tauntsData);
                 break;
             default:
                 $('body').css('background-color', ''); // Reset background for other cases
-                filteredData = (currentType === 'races' ? racesData : spellsData).filter(item => item.rarity === rarity);
+                filteredData = (currentType === 'races' ? racesData : (currentType === 'spells' ? spellsData : tauntsData)).filter(item => item.rarity === rarity);
                 break;
         }
         filterAndSortData();
