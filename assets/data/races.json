@@ -145,7 +145,7 @@
   },
   {
     "index": 0,
-    "name": "Schroom",
+    "name": "Shroom",
     "type": "normal",
     "probability": 1140,
     "values": 85,
@@ -153,7 +153,7 @@
   },
   {
     "index": 0,
-    "name": "Schroom",
+    "name": "Shroom",
     "type": "shiny",
     "probability": 5780,
     "values": 426,
@@ -161,7 +161,7 @@
   },
   {
     "index": 0,
-    "name": "Schroom",
+    "name": "Shroom",
     "type": "golden",
     "probability": 11560,
     "values": 852,

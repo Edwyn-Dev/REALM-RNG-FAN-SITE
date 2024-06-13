@@ -232,6 +232,12 @@ h1 {
   border-radius: 50%;
 }
 
+.image-icon-races {
+  width: 50%;
+  border-radius: 50%;
+  border: 5px solid #333;
+}
+
 @media (max-width: 1200px) {
   .race-card {
     flex: 0 1 calc(50% - 20px);

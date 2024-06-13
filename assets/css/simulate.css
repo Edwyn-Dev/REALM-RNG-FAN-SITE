@@ -77,7 +77,8 @@ label {
     border: none;
 }
 
-input, select {
+input,
+select {
     width: 100%;
     padding: 10px;
     font-size: 1rem;
@@ -86,7 +87,8 @@ input, select {
     transition: border-color 0.3s;
 }
 
-input:focus, select:focus {
+input:focus,
+select:focus {
     border-color: #4a90e2;
 }
 
@@ -209,7 +211,15 @@ button:hover {
     padding: 5px 0;
 }
 
+
+
 .image-icon {
-  width: 30%;
-  border-radius: 50%;
+    width: 30%;
+    border-radius: 50%;
+}
+
+.image-icon-races {
+    width: 30%;
+    border-radius: 50%;
+    border: 5px solid #333;
 }
