@@ -109,7 +109,7 @@ $(document).ready(async function () {
 
         const toggleBar = $('<div class="toggle-bar"><span class="toggle-icon">▼</span> More Info</div>');
         const extraInfo = $(`<div class="extra-info"></div>`);
-        extraInfo.html(`<p>This figure is an estimate based on a total of ${formatNumber(attempts)} simulations. It represents the average number of rolls needed to obtain the desired result.</p>`);
+        extraInfo.html(`<p>This figure is an estimate based on a total of ${formatNumber(attempts)} simulations. It represents an idea of the average number of rolls needed to obtain the desired result.</p><p>Procedure: For each simulation, a random number between 0 and 1 is generated after each roll. If this number is less than or equal to the calculated probability (1 / Probability), the desired race or spell is obtained. This process is repeated until the desired race or spell is obtained for each simulation. The total number of rolls for all simulations is then summed and divided by the number of simulations to get the average.</p>`);
         toggleBar.on('click', function () {
             extraInfo.slideToggle();
             $(this).find('.toggle-icon').text($(this).find('.toggle-icon').text() === '▼' ? '▲' : '▼');
