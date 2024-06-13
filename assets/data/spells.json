@@ -73,7 +73,7 @@
     },
     {
         "index": 0,
-        "name": "Justic",
+        "name": "Justice",
         "type": "normal",
         "probability": 10610,
         "values": 1090,
@@ -113,9 +113,9 @@
     },
     {
         "index": 0,
-        "name": "???",
+        "name": "Ice Shard Barrier",
         "type": "normal",
-        "probability": "???",
+        "probability": 114280,
         "values": "???",
         "rarity": "mythical"
     },
@@ -129,9 +129,9 @@
     },
     {
         "index": 0,
-        "name": "???",
+        "name": "Divine Shards",
         "type": "normal",
-        "probability": "???",
+        "probability": 261980,
         "values": "???",
         "rarity": "mythical"
     },

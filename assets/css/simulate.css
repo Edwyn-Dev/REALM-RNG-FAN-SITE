@@ -208,3 +208,8 @@ button:hover {
     margin: 0;
     padding: 5px 0;
 }
+
+.image-icon {
+  width: 30%;
+  border-radius: 50%;
+}

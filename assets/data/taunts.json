@@ -2,12 +2,6 @@
     {
         "index": 0,
         "rarity": "common",
-        "name": "Default Dance",
-        "values": 0
-    },
-    {
-        "index": 0,
-        "rarity": "common",
         "name": "Parrot Party",
         "values": 2450
     },

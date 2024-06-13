@@ -43,7 +43,7 @@ $(document).ready(function () {
         data.forEach(details => {
             const card = $(`<div class="race-card"></div>`);
             const content = $(`<div class="race-content" data-rarity="${details.rarity}"></div>`);
-            const title = $(`<div class="race-title">${details.type === 'normal' ? `` : `${details.type}`} ${details.name}</div>`);
+            const title = $(`<img class="image-icon" src="assets/img/${currentType}/${details.name}.png" alt="No Image Data"><div class="race-title">${details.type === 'normal' ? `` : `${details.type}`} ${details.name}</div>`);
             const spanIndex = $(`<span id="span-index">🗂️${details.index}</span>`);
             const stats = $('<div class="race-stats"></div>');
 
@@ -65,7 +65,7 @@ $(document).ready(function () {
         data.forEach(details => {
             const card = $(`<div class="race-card"></div>`);
             const content = $(`<div class="race-content" data-rarity="${details.rarity}"></div>`);
-            const title = $(`<div class="race-title">${details.name}</div>`);
+            const title = $(`<img class="image-icon" src="assets/img/${currentType}/icon/${(details.name).toLowerCase()}.png" alt="No Image Data"><div class="race-title">${details.name}</div>`);
             const spanIndex = $(`<span id="span-index">🗂️${details.index}</span>`);
             const stats = $('<div class="race-stats"></div>');
 
@@ -87,7 +87,7 @@ $(document).ready(function () {
         data.forEach(details => {
             const card = $(`<div class="race-card"></div>`);
             const content = $(`<div class="race-content" data-rarity="${details.rarity}"></div>`);
-            const title = $(`<div class="race-title">${details.name}</div>`);
+            const title = $(`<img class="image-icon" src="assets/img/${currentType}/${(details.name).toLowerCase()}.gif"><div class="race-title">${details.name}</div>`);
             const spanIndex = $(`<span id="span-index">🗂️${details.index}</span>`);
             const stats = $('<div class="race-stats"></div>');
             stats.append(`<div class="race-stat"><span class="stat-label">${formatNumber(details.values)}🪙</span></div>`);

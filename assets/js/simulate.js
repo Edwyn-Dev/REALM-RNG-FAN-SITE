@@ -2,6 +2,8 @@ $(document).ready(async function () {
     let racesData = [];
     let spellsData = [];
 
+    let img = ``;
+
     function formatNumber(value) {
         if (value >= 1000000) {
             return (value / 1000000).toFixed(1).replace(/\.0$/, '') + 'M';
@@ -60,6 +62,7 @@ $(document).ready(async function () {
             });
         }
         renderChoice(data);
+        img += ``
     });
 
     $('#dropdown-choice').on('change', function () {
@@ -122,11 +125,13 @@ $(document).ready(async function () {
     }
 
     function displayResults(avgRolls, attempts, selectedData) {
+        img = ``;
+        img += `<img class="image-icon" src="assets/img/${currentChoice}/icon/${selectedData.name}.png" alt="No Image Data">`;
         const resultsDiv = $('#results');
         resultsDiv.empty();
         const card = $('<div class="result-card"></div>');
         const content = $(`<div class="result-content" data-rarity="${selectedData.rarity}" style="background-color: ${getRarityColor(selectedData.rarity)}"></div>`);
-        const title = $(`<div class="result-title">${selectedData.type === "normal" ? '':capitalize(selectedData.type)} ${selectedData.name}</div>`);
+        const title = $(`${img}<div class="result-title">${selectedData.type === "normal" ? '':capitalize(selectedData.type)} ${selectedData.name}</div>`);
         const stats = $('<div class="result-stats"></div>');
         stats.append(`<div class="result-stat"><span class="stat-label">🎲 ${formatNumber(avgRolls.toFixed(0))} Avg Rolls Needed</span></div>`);
 
@@ -137,7 +142,6 @@ $(document).ready(async function () {
             extraInfo.slideToggle();
             $(this).find('.toggle-icon').text($(this).find('.toggle-icon').text() === '▼' ? '▲' : '▼');
         });
-
         content.append(title, stats, toggleBar, extraInfo);
         card.append(content);
         resultsDiv.append(card);
