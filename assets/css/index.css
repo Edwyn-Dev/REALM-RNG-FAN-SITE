@@ -233,7 +233,8 @@ h1 {
 }
 
 .image-icon-races {
-  width: 50%;
+  width: 215px;
+  height: 215px;
   border-radius: 50%;
   border: 5px solid #333;
 }
