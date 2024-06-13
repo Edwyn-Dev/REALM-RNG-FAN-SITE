@@ -153,10 +153,10 @@
     },
     {
         "index": 0,
-        "name": "???",
+        "name": "Hurricane Havoc",
         "type": "normal",
-        "probability": "???",
-        "values": "???",
+        "probability": 859090,
+        "values": 8590,
         "rarity": "mythical"
     },
     {
