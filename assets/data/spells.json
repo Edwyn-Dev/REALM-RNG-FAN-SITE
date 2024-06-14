@@ -116,15 +116,7 @@
         "name": "Ice Shard Barrier",
         "type": "normal",
         "probability": 114280,
-        "values": "???",
-        "rarity": "mythical"
-    },
-    {
-        "index": 0,
-        "name": "???",
-        "type": "normal",
-        "probability": "???",
-        "values": "???",
+        "values": 0,
         "rarity": "mythical"
     },
     {
@@ -145,14 +137,6 @@
     },
     {
         "index": 0,
-        "name": "???",
-        "type": "normal",
-        "probability": "???",
-        "values": "???",
-        "rarity": "mythical"
-    },
-    {
-        "index": 0,
         "name": "Hurricane Havoc",
         "type": "normal",
         "probability": 859090,
@@ -161,18 +145,10 @@
     },
     {
         "index": 0,
-        "name": "???",
+        "name": "Crimson Wrath",
         "type": "normal",
-        "probability": "???",
-        "values": "???",
-        "rarity": "mythical"
-    },
-    {
-        "index": 0,
-        "name": "???",
-        "type": "normal",
-        "probability": "???",
-        "values": "???",
+        "probability": 1260000,
+        "values": 12640,
         "rarity": "mythical"
     }
 ]
