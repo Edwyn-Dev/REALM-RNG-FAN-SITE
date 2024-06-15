@@ -116,7 +116,15 @@
         "name": "Ice Shard Barrier",
         "type": "normal",
         "probability": 114280,
-        "values": 0,
+        "values": 1150,
+        "rarity": "mythical"
+    },
+    {
+        "index": 0,
+        "name": "Fire Wave",
+        "type": "normal",
+        "probability": 173900,
+        "values": 1740,
         "rarity": "mythical"
     },
     {
