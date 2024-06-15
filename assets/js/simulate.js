@@ -90,9 +90,11 @@ $(document).ready(async function () {
             case 'epic': return 'rgb(133, 0, 133)';
             case 'legendary': return 'rgb(170, 107, 12)';
             case 'mythical': return 'rgb(201, 35, 35)';
+            case 'exclusive': return 'linear-gradient(to right, rgb(168, 168, 168), rgb(17, 148, 17), rgb(64, 123, 199), rgb(133, 0, 133), rgb(170, 107, 12), rgb(201, 35, 35))';
             default: return 'rgba(44, 44, 44, 0.80)';
         }
     }
+
 
     const fallbackImgSrc = `assets/img/no image data.png`;
 

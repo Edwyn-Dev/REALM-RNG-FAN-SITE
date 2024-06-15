@@ -122,6 +122,25 @@ h1 {
   background-color: rgb(201, 35, 35);
 }
 
+.rarity-btn[data-rarity="exclusive"],
+.race-content[data-rarity="exclusive"] {
+  background: linear-gradient(to right,
+      rgb(168, 168, 168),
+      /* common */
+      rgb(17, 148, 17),
+      /* un-common */
+      rgb(64, 123, 199),
+      /* rare */
+      rgb(133, 0, 133),
+      /* epic */
+      rgb(170, 107, 12),
+      /* legendary */
+      rgb(201, 35, 35)
+      /* mythical */
+    );
+}
+
+
 .rarity-btn[data-rarity="all"] {
   background-color: rgb(44, 44, 44, 0.80);
 }
@@ -224,7 +243,7 @@ h1 {
 }
 
 #nextUpdate {
- background-color: #555555;
+  background-color: #555555;
 }
 
 .image-icon {

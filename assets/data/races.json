@@ -433,10 +433,10 @@
   },
   {
     "index": 0,
-    "name": "Zeus (Exclusive)",
-    "type": "normal",
+    "name": "Zeus",
+    "type": "exclusive",
     "probability": 1000000,
     "values": 75000,
-    "rarity": "mythical"
+    "rarity": "exclusive"
   }
 ]

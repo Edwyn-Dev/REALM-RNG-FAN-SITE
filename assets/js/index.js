@@ -6,6 +6,7 @@ $(document).ready(function () {
         $('.rarity-filters').hide()
         $('.sort-buttons').hide()
         $('#search-bar').hide()
+        $('.exclusive').hide()
         const card = $(`<div class="race-card"></div>`);
         const content = $(`<div class="race-content"><p>The buttons below are prepared in advance in anticipation of future updates that could introduce new collectible content beyond spells, races, and taunts!</p></div>`);
         card.append(content);
@@ -33,13 +34,14 @@ $(document).ready(function () {
     }
     const fallbackImgSrc = `assets/img/no image data.png`;
 
-    
+
     function renderRaces(data) {
         raceContainer.empty();
         $('.info-span-index').show()
         $('.rarity-filters').show()
         $('.sort-buttons').show()
         $('#search-bar').show()
+        $('.exclusive').show()
         data.forEach(details => {
             const img = `assets/img/${currentType}/${(details.name).toLowerCase()}/${details.type}-${(details.name).toLowerCase()}.png`;
             const card = $(`<div class="race-card"></div>`);
@@ -63,6 +65,7 @@ $(document).ready(function () {
         $('.rarity-filters').show()
         $('.sort-buttons').show()
         $('#search-bar').show()
+        $('.exclusive').show()
         data.forEach(details => {
             const img = `assets/img/${currentType}/icon/${(details.name).toLowerCase()}.png`;
             const card = $(`<div class="race-card"></div>`);
@@ -84,6 +87,7 @@ $(document).ready(function () {
         raceContainer.empty();
         $('.info-span-index').hide()
         $('.rarity-filters').hide()
+        $('.exclusive').hide()
         $('.sort-buttons').show()
         $('#search-bar').show()
         data.forEach(details => {
@@ -160,6 +164,9 @@ $(document).ready(function () {
                 filteredData = (currentType === 'races' ? racesData : (currentType === 'spells' ? spellsData : tauntsData)).filter(item => item.rarity === rarity);
                 break;
             case 'mythical':
+                filteredData = (currentType === 'races' ? racesData : (currentType === 'spells' ? spellsData : tauntsData)).filter(item => item.rarity === rarity);
+                break;
+            case 'exclusive':
                 filteredData = (currentType === 'races' ? racesData : (currentType === 'spells' ? spellsData : tauntsData)).filter(item => item.rarity === rarity);
                 break;
             case 'all':
