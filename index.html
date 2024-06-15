@@ -6,12 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>REALM RNG FAN-SITE</title>
     <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="assets/js/index.js" defer></script>
+    <script src="assets/js/loadingScreen.js" defer></script>
 </head>
 
 <body>
-    <div class="container">
+    <div class="loadingScreen">
+        <div class="progress-bar-container">
+            <div class="progress-bar"></div>
+        </div>
+        <div class="loading-percentage">0%</div>
+    </div>
+    
+    <nav class="navbar" style="display: none;">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/img/logo.png" alt="">
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="display: none;">
         <div class="filters">
             <a href="simulate.html"><button class="sort-btn">GO TO SIMULATE TAB</button></a>
             <hr>
@@ -21,7 +38,6 @@
                 <hr>
                 <button id="sort-desc" class="sort-btn">Descending | ↜</button>
             </div>
-            <span class="info-span-index">Choose the rarity to view or simply view all</span>
             <div class="rarity-filters">
                 <button class="rarity-btn" data-rarity="common"></button>
                 <hr>
@@ -38,14 +54,6 @@
                 <button class="rarity-btn" data-rarity="mythical"></button>
             </div>
             <button class="rarity-btn exclusive" data-rarity="exclusive">EXCLUSIVE</button>
-            <span class="info-span-index">The images will come one day ^^</span>
-            <span class="info-span-index">When I find the courage!</span>
-            <div id="search-choice">
-                <button id="sort-race" class="sort-btn">Races</button>
-                <button id="sort-spells" class="sort-btn">Spells</button>
-                <button id="sort-taunts" class="sort-btn">Taunts</button>
-                <button id="nextUpdate" class="sort-btn">???</button>
-            </div>
         </div>
         <div id="race-container"></div>
     </div>

@@ -1,0 +1,26 @@
+/* Navigation Styles */
+.navbar {
+    height: 60px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    border-radius: 0.7rem;
+  }
+  
+  .nav-logo {
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-logo img {
+    width: 35%;
+    border-radius: 1rem;
+    border: 5px solid #333;
+    margin-bottom: 1rem;
+    margin: 10px;
+  }

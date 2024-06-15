@@ -12,6 +12,9 @@ body {
   color: #333;
   margin: 0;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 #search-choice {
@@ -24,14 +27,14 @@ body {
   margin: 0 auto;
   padding: 20px;
   background-color: #ffffff;
-  border-radius: 8px;
+  border-radius: 0.7rem;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
   text-align: center;
   margin-bottom: 20px;
-  color: #4a90e2;
+  color: #e25e4a;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -46,7 +49,7 @@ h1 {
 #search-bar {
   padding: 10px 15px;
   font-size: 16px;
-  border-radius: 5px;
+  border-radius: 0.7rem;
   border: 1px solid #ccc;
   margin-bottom: 10px;
   width: 100%;
@@ -62,9 +65,9 @@ h1 {
   padding: 10px 15px;
   font-size: 16px;
   margin: 0 5px;
-  border-radius: 5px;
+  border-radius: 0.7rem;
   border: none;
-  background-color: #4a90e2;
+  background-color: #e25e4a;
   color: white;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -84,7 +87,7 @@ h1 {
   padding: 10px 15px;
   font-size: 16px;
   margin: 5px;
-  border-radius: 5px;
+  border-radius: 0.7rem;
   border: none;
   cursor: pointer;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -165,7 +168,7 @@ h1 {
   background-color: #333;
   color: #fff;
   padding: 5px;
-  border-radius: 5px;
+  border-radius: 0.7rem;
   font-weight: bold;
   font-size: 0.9em;
   z-index: 10;
@@ -177,7 +180,7 @@ h1 {
   flex: 0 1 calc(25% - 20px);
   background-color: #ffffff;
   border: 1px solid #ddd;
-  border-radius: 8px;
+  border-radius: 0.7rem;
   overflow: hidden;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
@@ -232,7 +235,7 @@ h1 {
   text-align: center;
   padding: 5px;
   background-color: #333;
-  border-radius: 10px;
+  border-radius: 0.7rem;
   color: #fff;
 
 }
@@ -274,4 +277,38 @@ h1 {
     display: flex;
     flex-wrap: wrap;
   }
+}
+
+.loadingScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.progress-bar-container {
+    width: 80%;
+    background-color: #ccc;
+    border-radius: 0.7rem;
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 0;
+    height: 40px;
+    background-color: #e25e4a;
+    border-radius: 0.7rem;
+    transition: width 2s;
+}
+
+.loading-percentage {
+    font-size: 18px;
+    color: #fff;
 }

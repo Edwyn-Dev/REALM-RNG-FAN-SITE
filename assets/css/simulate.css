@@ -14,9 +14,11 @@ body {
     margin: 0;
     padding: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    gap: 1.5rem;
 }
 
 .container {
@@ -34,7 +36,7 @@ body {
 h1 {
     text-align: center;
     margin-bottom: 20px;
-    color: #4a90e2;
+    color: #e25e4a;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -89,7 +91,7 @@ select {
 
 input:focus,
 select:focus {
-    border-color: #4a90e2;
+    border-color: #e25e4a;
 }
 
 button {
@@ -101,7 +103,7 @@ button {
     font-size: 1rem;
     border-radius: 5px;
     border: none;
-    background-color: #4a90e2;
+    background-color: #e25e4a;
     color: white;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
