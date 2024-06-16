@@ -327,3 +327,10 @@ h1 {
   font-size: 18px;
   color: #fff;
 }
+
+
+
+.container-otherpage {
+  display: flex;
+  margin-bottom: 1rem;
+}

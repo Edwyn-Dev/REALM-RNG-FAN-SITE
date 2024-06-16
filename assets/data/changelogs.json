@@ -1,0 +1,30 @@
+[
+    {
+        "content": [
+            "<div class='changelog-entry'>",
+            "<h2>UPDATE 1 - ARC 1 ⚡ZEUS⚡ Released!</h2>",
+            "<ul>",
+            "<li>Added new Greek Mythology characters</li>",
+            "<img src='assets/img/changelogs/update1/update1-zeus.png' class='changelog-image'>",
+            "<hr>",
+            "<li>Added Emote/Taunt Shop + Coins drop around map</li>",
+            "<img src='assets/img/changelogs/update1/update1-emote.png' class='changelog-image'>",
+            "<hr>",
+            "<li>Added Leaderboards [bugged, will release patch this week]</li>",
+            "<img src='assets/img/changelogs/update1/update1-leaderboard.png' class='changelog-image'>",
+            "<hr>",
+            "<li>Added Luck Zone w/ Zeus Boss Battle</li>",
+            "<img src='assets/img/changelogs/update1/update1-luckzone.png' class='changelog-image'>",
+            "<hr>",
+            "<li>Added more spells</li>",
+            "<li>Added EXCLUSIVE Race and Spell that can only be rolled in Luck Zone</li>",
+            "<li>Map Revamp</li>",
+            "<li>UI and roll system Revamp</li>",
+            "<li>Rolling chances and luck boosts balancing</li>",
+            "<li>Race health and Spell damage balancing</li>",
+            "<li>Working on bug fixes and adding badges for the following: roll count, kill count, and easter eggs / secrets</li>",
+            "</ul>",
+            "</div>"
+        ]
+    }
+]
