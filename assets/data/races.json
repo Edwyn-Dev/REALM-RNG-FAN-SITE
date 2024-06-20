@@ -435,8 +435,8 @@
     "index": 0,
     "name": "Zeus",
     "type": "exclusive",
-    "probability": 1000000,
-    "values": 75000,
+    "probability": 1500000,
+    "values": 100000,
     "rarity": "exclusive"
   }
 ]
